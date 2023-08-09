@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-04T01:53:43Z" name="Default suite" finished-at="2023-07-04T01:53:44Z" duration-ms="756">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:luma.nyc.myrunner.LumaRunner@600b90df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-07-04T01:53:43Z" name="Default test" finished-at="2023-07-04T01:53:44Z" duration-ms="756">
+      <class name="luma.nyc.myrunner.LumaRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:luma.nyc.myrunner.LumaRunner@600b90df]" started-at="2023-07-04T01:53:43Z" name="setUpClass" finished-at="2023-07-04T01:53:44Z" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:luma.nyc.myrunner.LumaRunner@600b90df]" started-at="2023-07-04T01:53:44Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-04T01:53:44Z" duration-ms="192" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can login to the application with valid credentials and purchase the specific men's jacket."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[valid user can purchase the men jacket.]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'User already logged in the application and verify the user information on the landing page' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User already logged in the application and verify the user information on the landing page")
+public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to select jacket from men module")
+public void user_should_be_able_to_select_jacket_from_men_module() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Verify the jacket name on the {string} list")
+public void verify_the_jacket_name_on_the_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to select the {string} and {string} and {string} then click on the add to cart")
+public void user_should_be_able_to_select_the_and_and_then_click_on_the_add_to_cart(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to click on the cart")
+public void user_should_be_able_to_click_on_the_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to click on the checkout")
+public void user_should_be_able_to_click_on_the_checkout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to enter the shipping details and click on the Next")
+public void user_should_be_able_to_enter_the_shipping_details_and_click_on_the_next() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to verify the shipping address and place the order")
+public void user_should_be_able_to_verify_the_shipping_address_and_place_the_order() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should be able to verify the order number and get text on the screen {string}")
+public void user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'User already logged in the application and verify the user information on the landing page' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User already logged in the application and verify the user information on the landing page")
+public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to select jacket from men module")
+public void user_should_be_able_to_select_jacket_from_men_module() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Verify the jacket name on the {string} list")
+public void verify_the_jacket_name_on_the_list(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to select the {string} and {string} and {string} then click on the add to cart")
+public void user_should_be_able_to_select_the_and_and_then_click_on_the_add_to_cart(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to click on the cart")
+public void user_should_be_able_to_click_on_the_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to click on the checkout")
+public void user_should_be_able_to_click_on_the_checkout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to enter the shipping details and click on the Next")
+public void user_should_be_able_to_enter_the_shipping_details_and_click_on_the_next() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User should be able to verify the shipping address and place the order")
+public void user_should_be_able_to_verify_the_shipping_address_and_place_the_order() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should be able to verify the order number and get text on the screen {string}")
+public void user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:luma.nyc.myrunner.LumaRunner@600b90df]" started-at="2023-07-04T01:53:44Z" name="tearDownClass" finished-at="2023-07-04T01:53:44Z" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- luma.nyc.myrunner.LumaRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

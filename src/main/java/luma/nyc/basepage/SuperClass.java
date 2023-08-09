@@ -18,14 +18,13 @@ public class SuperClass {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	FileInputStream fis;
 	String browser;
 
 	public SuperClass() {
 
 		try {
-			prop = new Properties();
-			fis = new FileInputStream("./src/main/java/luma/nyc/config/LumaConfig.properties");
+			Properties prop = new Properties();
+			FileInputStream fis = new FileInputStream("./src/main/java/luma/nyc/config/LumaConfig.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -39,9 +38,10 @@ public class SuperClass {
 		browser = prop.getProperty("browserName");
 		if (browser.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
-	        ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--incognito");
-	        driver = new ChromeDriver(options);
+	       // ChromeOptions options = new ChromeOptions();
+	       // options.addArguments("--incognito");
+			//options
+	        driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
@@ -53,7 +53,7 @@ public class SuperClass {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
-		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("QA_ENV"));
 	}
 	}
